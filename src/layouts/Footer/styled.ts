@@ -85,7 +85,7 @@ export const SBButton = styled(Button)(({}) => ({
   },
 }));
 
-export const SBInput = styled(Input)(({}) => ({
+export const SBInput = styled(Input)(({ theme }) => ({
   marginBottom: "20px",
   display: "flex",
   //   [theme.breakpoints.down("md")]: {
@@ -96,11 +96,11 @@ export const SBInput = styled(Input)(({}) => ({
   //   },
   //   color: COMMON.secondary.lighter,
   borderRadius: "4px",
-  border: "2px solid black",
-
-  //   [theme.breakpoints.down("sm")]: {
-  //     maxWidth: "420px",
-  //   },
+  border: "2px solid white",
+  backgroundColor: "white",
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+  },
   //   [theme.breakpoints.down("xs")]: {
   //     maxWidth: "420px",
   //   },
